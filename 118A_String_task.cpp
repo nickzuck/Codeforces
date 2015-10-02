@@ -18,12 +18,9 @@ int main ()
 		}
 		else{
 			cout << "." ;
-			if (isupper(str[i])){
-				cout << char(tolower(str[i])); 
-			}
-			else {
-				cout << str[i] ; 
-			}
+			
+			cout << char(tolower(str[i])); 
+			
 		}
 	}	
 	cout << "\n" ; 
