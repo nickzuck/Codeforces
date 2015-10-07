@@ -1,7 +1,21 @@
 a = raw_input()
-if (a.upper() == a or a[0].upper()+a[1:] == a.upper()):
-	b = a.lower()
-	b = b[1:]
-	print "%s%s" %(a[0].upper(),b)
+if(a.upper()== a):
+	b = a.lower() 
+	c = a[0].upper()
+	d = c+b[1:]
+	d = d.strip()
+	print d 
+elif(a[0].islower()):
+	b = a[1:]
+	if (b.upper() == b):
+		c = a.lower()
+		d = a[0].upper()
+		d = d+c[1:]
+		d = d.strip()
+		print d
+	else :
+		print a
 else:
-	print a
+	print "yes kahan pahunch gaya"
+	print a		
+	
