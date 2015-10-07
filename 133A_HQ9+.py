@@ -1,5 +1,5 @@
 p = raw_input()
-if ('H' in p)|('Q' in p)|('9'in p)|('+' in p):
+if (('H' in p)|('Q' in p)|('9'in p)):
 	print 'YES'
 else:
 	print 'NO'
