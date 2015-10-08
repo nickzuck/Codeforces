@@ -18,10 +18,6 @@ if (a == 1 and b == 1):
 		prev = 1
 	else :
 		prev = 0
-elif (a == n):
-	prev = 1
-elif (b == n):
-	prev = 0
 else:
 	prev = 1
 	while(n > 0):
