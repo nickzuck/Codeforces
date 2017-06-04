@@ -27,6 +27,9 @@ int main()
         flag = false ;
     }
     else{
+        for(int i = 0 ;i < n ; i++){
+            p[i] = ceil(a[i]);
+        }
         int rem = w - sh, max, mi ;
 
         for(int i = 0 ;i < n ; i++){
@@ -35,12 +38,12 @@ int main()
             max = a[0];
             mi = 0 ;
             for(int j = 1 ; j < n ; j++){
-                if(a[j] > max and p[j] == 0){
+                if(a[j] > max and p[j] != a[j]){
                     max = a[j] ;  mi = j ;
                 }
             }
-            temp = floor(a[mi]/2);
-            p[mi] = min(rem, temp)+ ceil(a[mi]);
+            temp = min(a[mi]-p[mi], rem);
+            p[mi] += temp;
             rem -=  min(rem, temp);
         }
     }
